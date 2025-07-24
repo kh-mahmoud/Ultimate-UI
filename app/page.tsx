@@ -2,7 +2,6 @@ import CardList from "@/components/CardList";
 import { AppAreaChart } from "@/components/Charts/AppAreaChart";
 import AppBarChart from "@/components/Charts/AppBarChart";
 import { AppPieChart } from "@/components/Charts/AppPieChart";
-import RestaurantFoodForm from "@/components/ResForm";
 import { columns } from "@/components/Table/Columns";
 import { DataTable } from "@/components/Table/DataTable";
 import ToDoList from "@/components/ToDoList";
@@ -34,7 +33,6 @@ const page = () => {
       <section>
         <DataTable columns={columns} data={data} />
       </section>
-      <RestaurantFoodForm/>
     </div>
   );
 };

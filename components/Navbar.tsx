@@ -25,6 +25,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-4">
         <Link href={"/"}>Dashboard</Link>
+         <Link href={"/kanban"}>Kanban</Link>
         <Switcher />
 
         <DropdownMenu>

@@ -122,8 +122,21 @@
 }
 
 @layer components {
+    /*Navbar */
   .nav-bar {
-    @apply flex items-center justify-between  p-6;
+    @apply !justify-items-between gap-4  p-6;
+  }
+
+   .navbar-links {
+    @apply !justify-items-center gap-3 ;
+  }
+
+  .navbar-link {
+    @apply hover:underline
+  }
+
+  .navbar-side-items {
+    @apply !justify-items-between gap-3;
   }
 
   .title {
@@ -296,4 +309,12 @@
     @apply bg-primary-foreground !p-4 rounded-lg;
   }
 
+}
+
+@utility justify-items-center {
+  @apply flex justify-center items-center;
+}
+
+@utility justify-items-between {
+  @apply flex justify-between items-center;
 }

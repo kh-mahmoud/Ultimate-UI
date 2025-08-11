@@ -14,23 +14,31 @@ import { SidebarTrigger } from "./ui/sidebar";
 import AppAvatar from "./AppAvatar";
 
 const Navbar = () => {
-  //controle the sidebar 
+  //controle the sidebar
   // const {toggleSidebar} = useSidebar()
   return (
     <nav className="nav-bar">
+      <SidebarTrigger className="cursor-pointer" />
+      {/* <Button onClick={toggleSidebar}  >Trigger Button</Button> */}
 
-       <SidebarTrigger className="cursor-pointer"/>
-       {/* <Button onClick={toggleSidebar}  >Trigger Button</Button> */}
+      <div className="navbar-links">
+        <Link className="navbar-link" href={"/"}>
+          Dashboard
+        </Link>
+        <Link className="navbar-link" href={"/kanban"}>
+          Kanban
+        </Link>
+        <Link className="navbar-link" href={"/profile"}>
+          Profile
+        </Link>
+      </div>
 
-
-      <div className="flex items-center gap-4">
-        <Link href={"/"}>Dashboard</Link>
-         <Link href={"/kanban"}>Kanban</Link>
+      <div className="navbar-side-items">
         <Switcher />
 
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <AppAvatar/>
+            <AppAvatar />
           </DropdownMenuTrigger>
           <DropdownMenuContent collisionPadding={14}>
             <DropdownMenuLabel>My Account</DropdownMenuLabel>

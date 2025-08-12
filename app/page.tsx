@@ -9,7 +9,7 @@ import { data } from "@/constants";
 
 const page = () => {
   return (
-    <div>
+    <div className="px-2 max-sm:mr-7 flex flex-col gap-6" >
       <section className="dashboard-grid">
         <div className="dashboard-card xl:col-span-2 col-span-1">
           <AppBarChart />

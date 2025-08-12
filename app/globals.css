@@ -116,7 +116,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
   
 }
@@ -124,7 +124,7 @@
 @layer components {
     /*Navbar */
   .nav-bar {
-    @apply !justify-items-between gap-4  p-6;
+    @apply !justify-items-between gap-4  p-4;
   }
 
    .navbar-links {
@@ -302,7 +302,7 @@
 
    /* dashboard */
   .dashboard-grid {
-    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 !p-4;
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4;
   }
 
   .dashboard-card {

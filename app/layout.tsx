@@ -36,7 +36,7 @@ export default async function RootLayout({
         >
           <SidebarProvider defaultOpen={defaultOpen}>
             <AppSidebar />
-            <main className="flex-1 ">
+            <main className="flex-1 min-w-0">
               <Navbar />
               <div className={"p-4"}>{children}</div>
             </main>

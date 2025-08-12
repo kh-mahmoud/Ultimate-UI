@@ -128,7 +128,7 @@
   }
 
    .navbar-links {
-    @apply !justify-items-center gap-3 ;
+    @apply !justify-items-center gap-4 ;
   }
 
   .navbar-link {
